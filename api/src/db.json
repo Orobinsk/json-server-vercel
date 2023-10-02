@@ -9,7 +9,8 @@
     {
       "id": 2,
       "username": "newUser2",
-      "password": "321"
+      "password": "321",
+      "role": "user"
     }
   ],
   "types": [
@@ -52,7 +53,7 @@
     {
       "id": 1,
       "name": "Apple iPhone 14 Pro Max 1024 ГБ",
-      "price": "183 999",
+      "price": "183999",
       "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/d9db27e86586b14cdceb8ddc627f1101/0a472b8cc148d8d331e39eea4e323d5a46a4c1bda1900fee05bae5f2525a1515.jpg.webp",
       "brand": "Apple",
       "type": "Смартфоны",
@@ -82,7 +83,7 @@
     {
       "id": 2,
       "name": "Apple MacBook Air",
-      "price": "93 799",
+      "price": "93799",
       "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/b0d0d7cf9ef6a88765bbffa11e8a2a65/bc1311aa320af2e639161b8f6b03f01d7f1d915c9186421f8472626fcad1195a.jpg.webp",
       "brand": "Apple",
       "type": "Ноутбуки",
@@ -117,7 +118,7 @@
     {
       "id": 3,
       "name": "Google Pixel 7a 128 ГБ",
-      "price": "56 999",
+      "price": "56999",
       "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/f68186da890308190a4b37c09af597c9/f5ba49a3a2f2e555452e5de30678726a7ff71b54acc54dca4602ae19de15c7bc.jpg.webp",
       "brand": "Google",
       "type": "Смартфоны",
@@ -142,7 +143,7 @@
     {
       "id": 4,
       "name": "LED Xiaomi MI TV A2 43",
-      "price": "27 999",
+      "price": "27999",
       "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/91d2252ba27db95e991647b26945dce3/83290eb7e58a08549dac03753f5e4b36ff7ff6dcf9941d665081dd6c0f829f73.jpg.webp",
       "brand": "Xiaomi",
       "type": "Телевизоры",
@@ -177,7 +178,7 @@
     {
       "id": 5,
       "name": "POCO X5 Pro 5G 256 ГБ",
-      "price": "34 499",
+      "price": "34499",
       "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/e3e20e9e3cc56e9b698e097c98b25f41/67cafe57393612bb30e961bcf34f9c6cd3e97adfdd2721df926e7b75f45aba63.jpg.webp",
       "brand": "Xiaomi",
       "type": "Смартфоны",
@@ -207,7 +208,7 @@
     {
       "id": 6,
       "name": "LED Samsung QE65QN900BUXCE",
-      "price": "422 999",
+      "price": "422999",
       "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/f5cdae02701c7e30cabc5c5f079e4bd0/3f10b4c63e27d979311979092bd6c73fce6dca195410cf39c59add77c8c3f70d.png.webp",
       "brand": "Samsung",
       "type": "Телевизоры",
@@ -237,7 +238,7 @@
     {
       "id": 7,
       "name": "HUAWEI Mate X3 512 ГБ",
-      "price": "169 999",
+      "price": "169999",
       "img": "https://c.dns-shop.ru/thumb/st4/fit/500/500/2a77c5df025cb9f0acadb471abb08b5c/5a9e2a48d93e66d6deb8cda37258564a0f4f8e76bd9abaf8dee1b8aa86dc5bef.jpg.webp",
       "brand": "Huawei",
       "type": "Смартфоны",
@@ -267,7 +268,7 @@
     {
       "id": 8,
       "name": "HUAWEI MateBook X Pro MRGG-X",
-      "price": "160 999",
+      "price": "160999",
       "img": "https://c.dns-shop.ru/thumb/st1/fit/500/500/3c00dcdd93173a24d3fb82d40a0a181d/2eea717d949c2fbce8829e2439e91c65d56d1a949cb13a673525f47eccabdb50.jpg.webp",
       "brand": "Huawei",
       "type": "Ноутбуки",
