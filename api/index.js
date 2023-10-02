@@ -1,47 +1,26 @@
-const express = require('express');
-const fs = require('fs');
 const jsonServer = require('json-server');
 const path = require('path');
 const multer = require('multer');
 const upload = multer();
-const cors = require('cors')
+const jsonServerMiddlewares = jsonServer.defaults();
 const authRoutes = require('./src/routes/authRoutes');
 const shopRoutes = require('./src/routes/shopRoutes');
 
-const app = express();
 const server = jsonServer.create();
-app.use(cors())
-server.use(jsonServer.defaults({}));
+
+// Добавляем JSON-Server middlewares
+server.use(jsonServerMiddlewares);
 server.use(jsonServer.bodyParser);
 
-// Нужно для небольшой задержки, чтобы запрос проходил не мгновенно, имитация реального апи
-// server.use(async (req, res, next) => {
-//     await new Promise((res) => {
-//         setTimeout(res, 300);
-//     });
-//     next();
-// });
-
-app.use(express.json())
-app.use('/auth', authRoutes);
-app.use('/shop', shopRoutes);
-
-// Подключаем JSON-сервер как middleware
-app.use(server);
+// Подключаем роуты для авторизации и магазина
+server.use('/auth', authRoutes);
+server.use('/shop', shopRoutes);
 
 // Подключаем статические файлы
-app.use(express.static(path.join(__dirname, 'public')));
+// server.use(jsonServer.static(path.join(__dirname, 'public')));
 
-// проверяем, авторизован ли пользователь
-// server.use((req, res, next) => {
-//     if (!req.headers.authorization) {
-//         return res.status(403).json({message: 'AUTH ERROR'});
-//     }
-//     next();
-// });
-
-// запуск сервера
+// Запуск сервера
 const PORT = process.env.PORT || 8000;
-app.listen(PORT, () => {
+server.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
