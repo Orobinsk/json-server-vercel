@@ -2,6 +2,7 @@ const jsonServer = require('json-server');
 const path = require('path');
 const multer = require('multer');
 const upload = multer();
+const cors = require('cors')
 const jsonServerMiddlewares = jsonServer.defaults();
 const authRoutes = require('./src/routes/authRoutes');
 const shopRoutes = require('./src/routes/shopRoutes');
