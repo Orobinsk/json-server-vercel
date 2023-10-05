@@ -1,10 +1,7 @@
-// const jsonServer = require('json-server');
+require('dotenv').config()
 const path = require('path');
-// const multer = require('multer');
 const express =require('express')
-// const upload = multer();
 const cors = require('cors')
-// const jsonServerMiddlewares = jsonServer.defaults();
 const authRoutes = require('./src/routes/authRoutes');
 const shopRoutes = require('./src/routes/shopRoutes');
 const fileUpload = require('express-fileupload')
@@ -15,10 +12,6 @@ app.use(cors())
 app.use(express.json())
 app.use(express.static(path.resolve(__dirname, 'static')))
 app.use(fileUpload({}))
-
-// Добавляем JSON-Server middlewares
-// server.use(jsonServerMiddlewares);
-// server.use(jsonServer.bodyParser);
 
 // Подключаем роуты для авторизации и магазина
 app.use('/auth', authRoutes);

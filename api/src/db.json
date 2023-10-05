@@ -1,16 +1,22 @@
 {
   "users": [
     {
-      "id": "1",
+      "id": 1,
+      "role": "admin",
       "username": "admin",
-      "password": "123",
-      "role": "admin"
+      "hashPassword": "$2b$05$/sq.O3044vyMc9A3adMqfO6WA.39Hcl4qKdU7azpBU0DIbpslqw1."
     },
     {
       "id": 2,
-      "username": "newUser2",
-      "password": "321",
-      "role": "user"
+      "role": "user",
+      "username": "newUser",
+      "hashPassword": "$2b$05$hu7lR8gB1bA3BmHLvC0WieOGmnDnuiPgmcQ85u9oR3peuJFl47Wtu"
+    },
+    {
+      "id": 3,
+      "role": "user",
+      "username": "newUser3",
+      "hashPassword": "$2b$05$7RCjlQMTsBZkyYIfEyWXVuG.STenwhXBAudlPhR9GjnXokEuCO/WC"
     }
   ],
   "types": [
