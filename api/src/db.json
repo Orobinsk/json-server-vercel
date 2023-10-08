@@ -10,13 +10,7 @@
       "id": 2,
       "role": "user",
       "username": "newUser",
-      "hashPassword": "$2b$05$hu7lR8gB1bA3BmHLvC0WieOGmnDnuiPgmcQ85u9oR3peuJFl47Wtu"
-    },
-    {
-      "id": 3,
-      "role": "user",
-      "username": "newUser3",
-      "hashPassword": "$2b$05$7RCjlQMTsBZkyYIfEyWXVuG.STenwhXBAudlPhR9GjnXokEuCO/WC"
+      "hashPassword": "$2b$05$V/gqn/NHiiU7bdZImwZxger0Riw20HC8sHnVhAeCIF66Om4PErU2."
     }
   ],
   "types": [

@@ -74,7 +74,6 @@ async function registration(req, res) {
 async function check(req, res) {
         const token = generateJwt(req.user.id, req.user.username, req.user.role)
         return res.json(token);
-
 }
 
 module.exports = {

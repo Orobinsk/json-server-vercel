@@ -2,9 +2,9 @@
 
 
 ## implemented:
-- authorization
-- registration
+- (JWT) authentication;
 - sort/search/filter;
+- database change
 
 
 ## Description:
